@@ -1,0 +1,25 @@
+body{
+	background-image: url(bg_detail.jpg);
+	color: black;
+	font-family: tahoma, arial, arial arrow;
+}
+#table_detail {
+	margin: auto;
+	border-collapse: collapse;
+	border-width: 5px;
+	border-style: inset;
+	border-color: black;
+
+}
+#table_detail td,th{
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+
+}
+.link {
+	font-size: 20px;
+	font-style: italic;
+	color: red;
+	text-decoration: none;
+}

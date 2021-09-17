@@ -1,2 +1,2 @@
 # latihan
-ini akun latihan cloning
+Pengumpulan Tugas-tugas Jongkoding

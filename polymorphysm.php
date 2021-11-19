@@ -31,7 +31,7 @@ class DB_Mysql extends DB implements Query
 		$this->selectQuery = "SELECT " . $select; 
 	}
 	public function insert(){
-		$this->insertQuery = "INSERT INTO " . $this->tableQuery;
+		$this->insertQuery = "INSERT INTO " . $this->tableQuery ."('nama','kontak','jabatan','mapel1','mapel2')";
 	}
 	public function values($values){
 		$this->valuesQuery = " VALUES (" . $values . ")";

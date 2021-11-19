@@ -25,9 +25,9 @@ class Struktural
 	}
 
 	public function setData($nama ,$kontak, $jabatan, $mapel1="none", $mapel2="none"){
-		$this->con->insert();
 		$this->con->from("tb_guru");
-		$this->con->values("'','$nama', '$kontak', '$jabatan', '$mapel1', '$mapel2'");
+		$this->con->insert();
+		$this->con->values("'$nama', '$kontak', '$jabatan', '$mapel1', '$mapel2'");
 		$data = $this->con->generate_query_insert();
 
 	}
@@ -126,6 +126,8 @@ class Guru extends Struktural
 
 $guru = new Guru("localhost","root","","dbguru");
 
+echo "<pre>";
+var_dump($guru);
 $guru->setData("Umam" ,"00000000", "Tim IT");
 
 $data = $guru->getData();
